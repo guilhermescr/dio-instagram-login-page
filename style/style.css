@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../assets/fonts/Segoe-UI.ttf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--txt-font);
+}
+
+:root {
+  --txt-font: "Segoe UI", sans-serif;
+  --link-color: #0095F6;
+}
+
+body {
+  background-color: rgb(243, 243, 243);
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 100vh;
+}
+
+.structure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100vh;
+  margin-bottom: 3rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  
+  width: 60%;
+  height: 100vh;
+}
+
+.instagram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.instagram-phone img {
+  height: 40rem;
+}
+
+.instagram-continue {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  width: 50%;
+  min-height: 34rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: #fff;
+  border: 1px solid lightgray;
+
+  padding: 1.3rem 0;
+  width: 100%;
+}
+
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.instagram-logo {
+  height: 3rem;
+  cursor: pointer;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  height: 6rem;
+  cursor: pointer;
+}
+
+.instagram-login {
+  border-radius: 4px;
+  background-color: var(--link-color);
+  color: #fff;
+
+  padding: 8px;
+}
+
+.instagram-login:hover {
+  background-color: #007fd3;
+  transition: .2s ease-in-out;
+}
+
+.instagram-logout {
+  cursor: pointer;
+  color: var(--link-color);
+  margin-top: 1rem;
+}
+
+.instagram-logout:hover {
+  text-decoration: underline;
+}
+
+.not-account {
+  color: rgb(160, 160, 160);
+}
+
+.link-blue {
+  color: var(--link-color);
+  cursor: pointer;
+}
+
+.link-blue:hover {
+  text-decoration: underline;
+}
+
+.get-the-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.download-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 100%;
+  padding: 1rem;
+}
+
+.download-link {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.download-link:nth-child(1) {
+  background-image: url('../assets/images/apple-button.png');
+}
+
+.download-link:nth-child(2) {
+  background-image: url('../assets/images/googleplay-button.png');
+}
+
+.footer {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5px;
+}
+
+.footer p {
+  cursor: pointer;
+}
+
+.other-links, .topics, .lang-and-creator {
+  color: rgb(160, 160, 160);
+  font-size: 12px;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.lang-and-creator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin-top: 10px;
+}
+
+#languages {
+  background-color: rgb(243, 243, 243);
+  border: none;
+  outline: none;
+  color: rgb(160, 160, 160);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#languages option {
+  background-color: #fff;
+  color: #000;
+}
+
+#creator {
+  cursor: text;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #fff;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  .instagram-phone {
+    display: none;
+  }
+
+  .group {
+    border: 1px solid transparent;
+  }
+
+  .instagram-continue {
+    width: 100%;
+  }
+
+  .footer {
+    gap: 5px;
+    max-width: 400px;
+  }
+  
+  .other-links, .topics, .lang-and-creator {
+    gap: 0.6rem;
+  }
+  
+  .lang-and-creator {
+    margin-top: 1rem;
+  }
+  
+  #languages {
+    background-color: #fff;
+    color: rgb(160, 160, 160);
+  }
+}
