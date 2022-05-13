@@ -4,4 +4,4 @@ Aqui neste repositório eu ponho em prática meus conhecimentos de Flexbox e CSS
 Desafio proposto pela Digital Innovation One Inc.!
 
 Clique no link abaixo para visitar o projeto :D
- - [https://guilhermescr.github.io/dio-instagram-login-page/](Login - Instagram Clone)
+ - [Login - Instagram Clone](https://guilhermescr.github.io/dio-instagram-login-page/)
